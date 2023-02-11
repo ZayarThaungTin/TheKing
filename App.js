@@ -20,7 +20,7 @@ import {
   DefaultTheme as PaperDefaultTheme,
   DarkTheme as PaperDarkTheme 
 } from 'react-native-paper';
- 
+
 import { DrawerContent } from './screens/DrawerContent';
 
 import MainTabScreen from './screens/MainTabScreen';
@@ -168,7 +168,7 @@ const App = () => {
     <NavigationContainer theme={theme}>
       { loginState.userToken !== null ? (
         <Drawer.Navigator drawerContent={props => <DrawerContent {...props} />}>
-          <Drawer.Screen name="The King" component={MainTabScreen} />
+          <Drawer.Screen name="HomeDrawer" component={MainTabScreen} />
           <Drawer.Screen name="SupportScreen" component={SupportScreen} />
           <Drawer.Screen name="SettingsScreen" component={SettingsScreen} />
           <Drawer.Screen name="BookmarkScreen" component={BookmarkScreen} />
